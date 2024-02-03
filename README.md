@@ -30,18 +30,18 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 <br>
 
-### Car Inventory System
+### com.BigDecimalOperations.Car Inventory System
 
-1. Suppose you are building a car inventory system. All cars have a `vinNumber`, `make`, `model` and `mileage`. But no car is just a car. Each car is either a `Sedan`, a `UtilityVehicle` or a `Truck`.
-2. Create an abstract class named `Car` and define the following properties and behaviors:
+1. Suppose you are building a car inventory system. All cars have a `vinNumber`, `make`, `model` and `mileage`. But no car is just a car. Each car is either a `com.InventoryCarSystem.Sedan`, a `com.InventoryCarSystem.UtilityVehicle` or a `com.InventoryCarSystem.Truck`.
+2. Create an abstract class named `com.BigDecimalOperations.Car` and define the following properties and behaviors:
    - `vinNumber`: a `String` representing the VIN number of the car
    - `make`: a `String` representing the make of the car
    - `model`: a `String` representing the model of the car
    - `mileage`: an `int` representing the mileage of the car
    - `getInfo()`: a method that returns a `String` containing all of the car's properties in a readable format
-3. Create three classes that extend `Car`: `Sedan`, `UtilityVehicle` and `Truck`.
-4. `UtilityVehicle` objects should have an additional `fourWheelDrive` property, a `boolean` that represents whether the vehicle has four-wheel drive.
-5. `Truck` objects should have an additional `towingCapacity` property, a `double` that represents the towing capacity of the truck.
+3. Create three classes that extend `com.BigDecimalOperations.Car`: `com.InventoryCarSystem.Sedan`, `com.InventoryCarSystem.UtilityVehicle` and `com.InventoryCarSystem.Truck`.
+4. `com.InventoryCarSystem.UtilityVehicle` objects should have an additional `fourWheelDrive` property, a `boolean` that represents whether the vehicle has four-wheel drive.
+5. `com.InventoryCarSystem.Truck` objects should have an additional `towingCapacity` property, a `double` that represents the towing capacity of the truck.
 
 <br>
 
