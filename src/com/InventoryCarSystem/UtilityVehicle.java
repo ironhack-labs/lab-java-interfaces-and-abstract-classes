@@ -1,7 +1,5 @@
 package com.InventoryCarSystem;
 
-import com.BigDecimalOperations.Car;
-
 public class UtilityVehicle extends Car {
     private boolean fourWheelDrive = false;
 

@@ -1,4 +1,4 @@
-package com.BigDecimalOperations;
+package com.InventoryCarSystem;
 
 public abstract class Car {
     private String vinNumber;

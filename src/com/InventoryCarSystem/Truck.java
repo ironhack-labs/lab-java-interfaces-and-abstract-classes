@@ -1,7 +1,5 @@
 package com.InventoryCarSystem;
 
-import com.BigDecimalOperations.Car;
-
 public class Truck extends Car {
     private double towingCapacity = 1000;
 
