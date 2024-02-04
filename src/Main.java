@@ -1,6 +1,7 @@
 package src;
 
 import src.cars.*;
+import src.video.*;
 
 import java.math.BigDecimal;
 
@@ -17,5 +18,8 @@ public class Main {
         System.out.println(car.getInfo());
         System.out.println(car2.getInfo());
         System.out.println(car3.getInfo());
+        System.out.println("====== Video Streaming Service ======");
+        Video movie = new Movie("Inception", 148, 4.9);
+        System.out.println(movie.getInfo());
     }
 }
