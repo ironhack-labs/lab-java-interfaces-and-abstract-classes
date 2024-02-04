@@ -21,5 +21,7 @@ public class Main {
         System.out.println("====== Video Streaming Service ======");
         Video movie = new Movie("Inception", 148, 4.9);
         System.out.println(movie.getInfo());
+        Video tvSeries = new TvSeries("Game of Thrones", 60, 80);
+        System.out.println(tvSeries.getInfo());
     }
 }
