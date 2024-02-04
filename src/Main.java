@@ -12,6 +12,8 @@ public class Main {
         System.out.println(BigDecimalWorkshop.changeSignAndRound(BigDecimal.valueOf(-45.67)));
         System.out.println("====== Car Inventory System ======");
         Car car = new Sedan("12345B", "Ford", "Fiesta", 123);
+        Car car2 = new UtilityVehicle("12345B", "BMV", "4x4", 300, true);
         System.out.println(car.getInfo());
+        System.out.println(car2.getInfo());
     }
 }
