@@ -1,5 +1,6 @@
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,6 +22,91 @@ public class Main {
         System.out.println("\nCar 3 (truck) - " + car3.getInfo());
 
         // ¿¿SI EL OBJETO ES DE TIPO UTILITYVEHICLE O TRUCK HAY QUE IMPRIMIR TAMBIEN LAS PROPIEDADES fourWheelDrive y towingCapacity??
+
+
+        IntArrayList test1 = new IntArrayList();
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(3);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(5);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(6);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(9);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(0);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(1);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(5);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(6);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(10);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(2);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(5);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(1);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(5);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(6);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(2);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+        test1.add(11);
+        System.out.println(Arrays.toString(test1.getArrayInts()));
+
+
+
+        // IntVector
+        IntVector test2 = new IntVector();
+
+        test2.add(3);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(5);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(6);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(9);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(0);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(1);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(5);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(6);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(10);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(2);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(5);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(1);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(5);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(6);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(2);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(11);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(10);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(2);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(5);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+        test2.add(1);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
+
+        test2.add(32456);
+        System.out.println(Arrays.toString(test2.getArrayInts()));
     }
 
 
