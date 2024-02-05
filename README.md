@@ -337,3 +337,26 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 </details>
 
+## Efficiency of IntArrayList vs. IntVector
+
+The `IntArrayList` and `IntVector` classes both implement a dynamic array functionality in Java but differ primarily in their capacity expansion strategies. Understanding these differences can help you choose the most efficient class for your specific use case.
+
+### IntArrayList
+
+- **Growth Strategy**: Increases its capacity by 50% each time it needs to grow.
+- **Use Case for Efficiency**: Recommended for use cases where additions to the list are relatively infrequent or where memory efficiency is more critical than the cost of resizing. Because it grows by a smaller factor, it's less likely than `IntVector` to allocate more memory than is needed, making it more memory-efficient in scenarios where the list size doesn’t increase dramatically over time.
+
+#### Example Scenario:
+Suppose you're building a feature that gradually accumulates user actions throughout a session but doesn't expect an exponential growth in actions. `IntArrayList` would be efficient here, balancing between minimizing memory overhead and managing growth effectively.
+
+### IntVector
+
+- **Growth Strategy**: Doubles its capacity each time it needs to expand.
+- **Use Case for Efficiency**: Ideal for scenarios where the list size is expected to grow rapidly or when the cost of resizing is more critical than memory usage. By doubling its capacity, `IntVector` reduces the number of resizes needed as elements are added, which can improve performance in applications where large numbers of elements are added in a short time.
+
+#### Example Scenario:
+Imagine an application that processes large batches of data records—reading them in all at once. If you know the dataset will grow significantly and quickly, `IntVector`, with its doubling size strategy, minimizes the number of resizes and can handle these large, rapid increases more efficiently.
+
+### Conclusion
+
+Choosing between `IntArrayList` and `IntVector` depends on your specific requirements for memory efficiency and performance concerning dynamic array resizing. Analyze your application's growth patterns and select the implementation that best matches your scenario.
