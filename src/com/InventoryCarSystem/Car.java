@@ -1,3 +1,5 @@
+package com.InventoryCarSystem;
+
 abstract class Car {
     protected String vinNumber;
     protected String make;
@@ -5,7 +7,6 @@ abstract class Car {
     protected int mileage;
 
     public Car(String vinNumber, String make, String model, int mileage) {
-
         setVinNumber(vinNumber);
         setMake(make);
         setModel(model);

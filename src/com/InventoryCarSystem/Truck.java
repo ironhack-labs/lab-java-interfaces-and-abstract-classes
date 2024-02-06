@@ -1,3 +1,7 @@
+package com.InventoryCarSystem;
+
+import com.InventoryCarSystem.Car;
+
 public class Truck extends Car {
     private double towingCapacity;
 

@@ -1,3 +1,7 @@
+package com.InventoryCarSystem;
+
+import com.InventoryCarSystem.Car;
+
 public class UtilityVehicle extends Car {
     private boolean fourWheelDrive;
 
