@@ -58,18 +58,19 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 <br>
 
-### IntList Interface
+### InitList.IntList Interface
 
-1. Create an `IntList` interface with the following methods:
+1. Create an `InitList.IntList` interface with the following methods:
    - `add(int number)`: a method that adds a new number to the list
    - `get(int id)`: a method that retrieves an element by its ID
-2. Create two implementations of `IntList`: `IntArrayList` and `IntVector`.
-3. `IntArrayList` should store numbers in an array with a length of 10 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is 50% larger, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 15.)
-4. `IntVector` should store numbers in an array with a length of 20 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is double the size of the current array, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 20.)
-5. In your `README.md`, include an example of when `IntArrayList` would be more efficient and when `IntVector` would be more efficient.
+2. Create two implementations of `InitList.IntList`: `InitList.IntArrayList` and `InitList.IntVector`.
+3. `InitList.IntArrayList` should store numbers in an array with a length of 10 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is 50% larger, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 15.)
+4. `InitList.IntVector` should store numbers in an array with a length of 20 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is double the size of the current array, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 20.)
+5. In your `README.md`, include an example of when `InitList.IntArrayList` would be more efficient and when `InitList.IntVector` would be more efficient.
 
-IntArrayList: I will use when I have a relatively small dataset and you frequently add new numbers to the list, example if I want to add the amount of purchase of a client.
-IntVector: I will use when you are working with a large dataset and expect the list to grow significantly. Example, if I want to have a stock control of the inventory and I storage in a collection when I buy and sell goods 
+IntArrayList: I will use it when I have a relatively small dataset, and I frequently add new numbers to the list. For example, if I want to track the amount of a client's purchases.
+
+IntVector: I will use it when working with a large dataset and expect the list to grow significantly. For example, if I want to maintain stock control of inventory and store data in a collection for both purchases and sales of goods.
 
 <br>
 

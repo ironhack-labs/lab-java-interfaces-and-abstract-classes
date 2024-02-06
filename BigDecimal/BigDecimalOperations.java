@@ -14,15 +14,16 @@ import java.math.BigDecimal;
 public class BigDecimalOperations {
 
 
-    static double nearestHundredth(BigDecimal bd){
+    static double convertToDouble(BigDecimal bd){
 
         BigDecimal rounded = bd.setScale(2, BigDecimal.ROUND_HALF_UP);
         return rounded.doubleValue();
     }
-    static double nearestTenthOppositeSign(BigDecimal bd){
+    static BigDecimal convertToDoubleAndReverse(BigDecimal bd){
 
-        BigDecimal rounded = bd.setScale(1, BigDecimal.ROUND_HALF_UP);
-        return rounded.doubleValue()*-1;
+        BigDecimal roundedReverse = bd.setScale(1, BigDecimal.ROUND_HALF_UP).negate();
+
+        return roundedReverse;
     }
 
 }
