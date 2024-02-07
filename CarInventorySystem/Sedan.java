@@ -7,14 +7,5 @@ public class Sedan extends CarInventorySystem.Car {
             //System.out.println("Sedan constructor");
         }
 
-        @Override
-        String getInfo() {
-            return "Sedan{" +
-                    "vinNumber='" + vinNumber + '\'' +
-                    ", make='" + make + '\'' +
-                    ", model='" + model + '\'' +
-                    ", mileage=" + mileage +
-                    '}';
-        }
 }
 

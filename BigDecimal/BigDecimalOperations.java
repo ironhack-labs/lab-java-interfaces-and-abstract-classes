@@ -19,10 +19,11 @@ public class BigDecimalOperations {
         BigDecimal rounded = bd.setScale(2, BigDecimal.ROUND_HALF_UP);
         return rounded.doubleValue();
     }
+
+
     static BigDecimal convertToDoubleAndReverse(BigDecimal bd){
 
         BigDecimal roundedReverse = bd.setScale(1, BigDecimal.ROUND_HALF_UP).negate();
-
         return roundedReverse;
     }
 

@@ -16,15 +16,13 @@ public abstract class Video{
      */
 
 
-    protected String title;
-    protected int duration;
+    private String title;
+    private int duration;
 
     public Video(String title, int duration) {
         this.title = title;
         this.duration = duration;
     }
-
-        abstract String getInfo();
 
         public String getTitle() {
             return title;
@@ -41,6 +39,8 @@ public abstract class Video{
         public void setDuration(int duration) {
             this.duration = duration;
         }
+
+        abstract String getInfo();
 
 }
 

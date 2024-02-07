@@ -1,6 +1,5 @@
 package CarInventorySystem;
-
-public abstract class Car {
+ abstract class Car {
 
     /*
     Suppose you are building a car inventory system. All cars have a vinNumber, make, model and mileage.
@@ -18,21 +17,61 @@ public abstract class Car {
     the towing capacity of the truck.
      */
 
+     private String vinNumber;
+     private String make;
+     private String model;
+     private int mileage;
 
-        public Car(String vinNumber, String make, String model, int mileage) {
-            this.vinNumber = vinNumber;
-            this.make = make;
-            this.model = model;
-            this.mileage = mileage;
-            //System.out.println("Car constructor");
-        }
+     public Car(String vinNumber, String make, String model, int mileage) {
+         this.vinNumber = vinNumber;
+         this.make = make;
+         this.model = model;
+         this.mileage = mileage;
+         //System.out.println("Car constructor");
+     }
+     public String getVinNumber() {
+         return vinNumber;
+     }
 
-        abstract String getInfo();
+     public void setVinNumber(String vinNumber) {
+         this.vinNumber = vinNumber;
+     }
 
-         String vinNumber;
-         String make;
-         String model;
-         int mileage;
+     public String getMake() {
+         return make;
+     }
+
+     public void setMake(String make) {
+         this.make = make;
+     }
+
+     public String getModel() {
+         return model;
+     }
+
+     public void setModel(String model) {
+         this.model = model;
+     }
+
+     public int getMileage() {
+         return mileage;
+     }
+
+     public void setMileage(int mileage) {
+         this.mileage = mileage;
+     }
+
+
+     public String getInfo(){
+         return "Car{" +
+             "vinNumber='" + getVinNumber() + '\'' +
+                     ", make='" + getMake() + '\'' +
+                     ", model='" + getModel() + '\'' +
+                     ", mileage=" + getMileage() +
+                     '}';
+     }
+
+
 
 }
 

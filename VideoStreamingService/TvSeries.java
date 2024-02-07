@@ -2,6 +2,8 @@ package VideoStreamingService;
 
 public class TvSeries extends Video {
 
+    private int episodes ;
+
     public TvSeries(String title, int duration, int episodes ) {
         super(title, duration);
         this.episodes =episodes ;
@@ -18,8 +20,8 @@ public class TvSeries extends Video {
 
     @Override
     String getInfo() {
-        return String.format("Title: %s\nDuration: %d minutes\nEpisodes: %d", title, duration, episodes);
+        return String.format("Title: %s\nDuration: %d minutes\nEpisodes: %d", getTitle(), getDuration(), getEpisodesQuantity());
     }
 
-    private int episodes ;
+
 }

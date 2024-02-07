@@ -9,9 +9,38 @@ public class IntArrayList implements IntList {
     and add the new element. (For example, an array of length 10 would be increased to 15.)
      */
 
+    private int maxArraySize;
+    private int[] array;
+    private int currentSize;
+
     public IntArrayList() {
+        maxArraySize=10;
         this.array = new int[maxArraySize];
         this.currentSize = 0;
+    }
+
+    public int[] getArray() {
+        return array;
+    }
+
+    public void setArray(int[] array) {
+        this.array = array;
+    }
+
+    public int getCurrentSize() {
+        return currentSize;
+    }
+
+    public void setCurrentSize(int currentSize) {
+        this.currentSize = currentSize;
+    }
+
+    public int getMaxArraySize() {
+        return maxArraySize;
+    }
+
+    public void setMaxArraySize(int maxArraySize) {
+        this.maxArraySize = maxArraySize;
     }
 
 
@@ -40,31 +69,7 @@ public class IntArrayList implements IntList {
         return array[id];
     }
 
-    public int[] getArray() {
-        return array;
-    }
 
-    public void setArray(int[] array) {
-        this.array = array;
-    }
 
-    public int getCurrentSize() {
-        return currentSize;
-    }
 
-    public void setCurrentSize(int currentSize) {
-        this.currentSize = currentSize;
-    }
-
-    public int getMaxArraySize() {
-        return maxArraySize;
-    }
-
-    public void setMaxArraySize(int maxArraySize) {
-        this.maxArraySize = maxArraySize;
-    }
-
-    private int maxArraySize = 10;
-    private int[] array;
-    private int currentSize;
 }

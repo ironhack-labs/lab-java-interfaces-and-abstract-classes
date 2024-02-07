@@ -11,7 +11,12 @@ public class IntVector implements IntList {
     (For example, an array of length 10 would be increased to 20.)
      */
 
+    private int maxArraySize;
+    private int[] array;
+    private int currentSize;
+
     public IntVector() {
+        maxArraySize=20;
         this.array = new int[maxArraySize];
         this.currentSize = 0;
     }
@@ -65,8 +70,6 @@ public class IntVector implements IntList {
         this.maxArraySize = maxArraySize;
     }
 
-    private int maxArraySize = 20;
-    private int[] array;
-    private int currentSize;
+
 }
 
