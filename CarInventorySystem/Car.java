@@ -62,14 +62,7 @@ package CarInventorySystem;
      }
 
 
-     public String getInfo(){
-         return "Car{" +
-             "vinNumber='" + getVinNumber() + '\'' +
-                     ", make='" + getMake() + '\'' +
-                     ", model='" + getModel() + '\'' +
-                     ", mileage=" + getMileage() +
-                     '}';
-     }
+     public abstract String getInfo();
 
 
 

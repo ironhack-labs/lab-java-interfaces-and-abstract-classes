@@ -1,6 +1,7 @@
 package BigDecimal;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 /**
  * BigDecimal Operations
@@ -14,16 +15,16 @@ import java.math.BigDecimal;
 public class BigDecimalOperations {
 
 
-    static double convertToDouble(BigDecimal bd){
+    public double convertToDouble(BigDecimal bd){
 
-        BigDecimal rounded = bd.setScale(2, BigDecimal.ROUND_HALF_UP);
+        BigDecimal rounded = bd.setScale(2, RoundingMode.HALF_UP);
         return rounded.doubleValue();
     }
 
 
-    static BigDecimal convertToDoubleAndReverse(BigDecimal bd){
+    public BigDecimal convertToDoubleAndReverse(BigDecimal bd){
 
-        BigDecimal roundedReverse = bd.setScale(1, BigDecimal.ROUND_HALF_UP).negate();
+        BigDecimal roundedReverse = bd.setScale(1, RoundingMode.HALF_UP).negate();
         return roundedReverse;
     }
 

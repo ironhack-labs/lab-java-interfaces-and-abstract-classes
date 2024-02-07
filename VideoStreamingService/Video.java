@@ -15,7 +15,6 @@ public abstract class Video{
      * Movie objects should have an additional rating property, a double representing the rating of the movie.
      */
 
-
     private String title;
     private int duration;
 
