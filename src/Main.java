@@ -21,8 +21,16 @@ public class Main {
         System.out.println("\nCar 2 (sedan) - " + car2.getInfo());
         System.out.println("\nCar 3 (truck) - " + car3.getInfo());
 
-        // ¿¿SI EL OBJETO ES DE TIPO UTILITYVEHICLE O TRUCK HAY QUE IMPRIMIR TAMBIEN LAS PROPIEDADES fourWheelDrive y towingCapacity??
 
+        // 3) Video streaming service tests
+        System.out.println("\u001b[1m \n3) Video Streaming Service");
+        TvSeries friends = new TvSeries("Friends", 236*22, 236);
+        Movie se7en = new Movie("Se7en", 127, 9d);
+        System.out.println("\u001b[0mTvSeries - " + friends.getInfo());
+        System.out.println("\nMovie - " + se7en.getInfo());
+
+        // 4) IntList Interface tests
+        System.out.println("\u001b[1m \n4) IntList Interface");
 
         IntArrayList test1 = new IntArrayList();
         System.out.println(Arrays.toString(test1.getArrayInts()));
