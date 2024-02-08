@@ -70,6 +70,12 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 <br>
 
+IntArrayList when memory usage is a critical factor, and you expect the list to be relatively small or grow gradually. The 50% increase in size upon reaching capacity helps in conserving memory for smaller datasets.
+
+IntVector when you anticipate a large number of elements, and performance is crucial. The doubling of the array size reduces the frequency of resizing operations, leading to better performance for larger datasets.
+
+<br>
+
 ## FAQs
 
 <br>
