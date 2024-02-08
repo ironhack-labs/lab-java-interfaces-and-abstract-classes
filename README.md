@@ -69,6 +69,9 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 5. In your `README.md`, include an example of when `IntArrayList` would be more efficient and when `IntVector` would be more efficient.
 
 <br>
+EXAMPLE:
+The IntArrayList class is more efficient when less resizing is needed or when the size of the batch is fixed, while the IntVector class is more efficient when the needed size of the list is unknown and/or is changed often.
+<br>
 
 ## FAQs
 
