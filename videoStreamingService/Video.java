@@ -1,4 +1,4 @@
-package videoStreaming;
+package videoStreamingService;
 
 public abstract class Video {
     private String title;
@@ -24,9 +24,5 @@ public abstract class Video {
     public void setDuration(int duration) {
         this.duration = duration;
     }
-
-    public abstract String getType();
-    public String getInfo(){
-        return "Title: " + title + "Duration: " + duration + "Type:" + getType();
-    }
+    public abstract String getInfo();
 }

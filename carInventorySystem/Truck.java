@@ -1,14 +1,11 @@
-package carInventory;
+package carInventorySystem;
 
 public class Truck extends Car{
     private double towingCapacity;
-    public Truck(String vinNumber, String make, String model, int mileage) {
-        super(vinNumber, make, model, mileage);
-        this.towingCapacity = towingCapacity;
-    }
 
-    public void setTowingCapacity(double towingCapacity) {
-        this.towingCapacity = towingCapacity;
+    public Truck(String vinNumber, String make, String model, int mileage, double towingCapacity) {
+        super(vinNumber, make, model, mileage);
+        this.towingCapacity = getTowingCapacity();
     }
 
     public double getTowingCapacity() {
@@ -16,7 +13,7 @@ public class Truck extends Car{
     }
 
     @Override
-    public String getType() {
-        return null;
+    public String getInfo() {
+        return "VIN: " + getVinNumber() + "\nMake: " + getMake() + "\nModel: " + getModel() + "\nMileage: " + getMileage() + "\nType: Truck\nTowing Capacity: " + towingCapacity + " tons";
     }
 }

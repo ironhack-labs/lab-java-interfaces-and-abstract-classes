@@ -1,12 +1,13 @@
-package videoStreaming;
+package videoStreamingService;
 
 public class Movie extends Video {
-    private int rating;
-    public Movie(String title, int duration) {
+    private double rating;
+    public Movie(String title, int duration, double rating) {
         super(title, duration);
+        this.rating= rating;
     }
 
-    public int getRating() {
+    public double getRating() {
         return rating;
     }
 
@@ -15,7 +16,7 @@ public class Movie extends Video {
     }
 
     @Override
-    public String getType() {
-        return "TV Series";
+    public String getInfo() {
+        return "Title: " + getTitle() + "\nDuration: " + getDuration() + " minutes\nType: Movie\nRating: " + rating;
     }
 }

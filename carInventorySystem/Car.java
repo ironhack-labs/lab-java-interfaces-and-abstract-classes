@@ -1,4 +1,4 @@
-package carInventory;
+package carInventorySystem;
 
 public abstract class Car {
     private String vinNumber;
@@ -27,8 +27,5 @@ public abstract class Car {
         return mileage;
     }
 
-    public abstract String getType();
-    private String getInfo(){
-        return "VIN: " + vinNumber + "/Make: " + make + "/Model: " + model + "/Mileage: " + mileage + "Type: "+ getType();
-    }
+    public abstract String getInfo();
 }
