@@ -74,6 +74,7 @@ IntArrayList when memory usage is a critical factor, and you expect the list to 
 
 IntVector when you anticipate a large number of elements, and performance is crucial. The doubling of the array size reduces the frequency of resizing operations, leading to better performance for larger datasets.
 
+
 <br>
 
 ## FAQs
