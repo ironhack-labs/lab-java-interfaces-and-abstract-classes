@@ -3,7 +3,7 @@ import java.math.BigDecimal;
 
 public class Main {
     public static void main(String[] args) {
-        // BigDecimal Operations
+        /*// BigDecimal Operations
         BigDecimal bigDecimal1 = new BigDecimal(4.2545);
         System.out.println(bigDecimal1 + " rounded to the nearest hundredth = " + roundToHundredth(bigDecimal1));
         BigDecimal bigDecimal2 = new BigDecimal(1.2345);
@@ -24,6 +24,23 @@ public class Main {
         System.out.println("TV Series Info = " + tvSeries.getInfo());
         Movie movie = new Movie("Titanic", 120, 4.5);
         System.out.println("Movie Info = " + movie.getInfo());
+*/
+        // IntList Interface
+        IntList intArrayListTest = new IntArrayList();
+        intArrayListTest.add(10);
+        System.out.println("Element at index 10: " + intArrayListTest.get(10));
+        for (int i = 11; i < 16; i++) {
+            intArrayListTest.add(i);
+        }
+        System.out.println("Element at index 15: " + intArrayListTest.get(15));
+
+        IntList intVectorTest = new IntVector();
+        intVectorTest.add(20);
+        System.out.println("Element at index 20: " + intVectorTest.get(20));
+        for (int i = 21; i < 26; i++) {
+            intVectorTest.add(i);
+        }
+        System.out.println("Element at index 25: " + intVectorTest.get(25));
     }
 
     // Create a method that accepts a BigDecimal and returns a double of the BigDecimal number rounded to

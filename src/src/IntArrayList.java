@@ -5,8 +5,8 @@ public class IntArrayList implements IntList {
     @Override
     public void add(int number) {
         if (array.length == capacity) {
-            int newCapacity = array.length + array.length / 2;
-            int[] newArray = new int[newCapacity];
+            int capacity = array.length + array.length / 2;
+            int[] newArray = new int[capacity];
             System.arraycopy(array, 0, newArray, 0, array.length);
             array = newArray;
         }
