@@ -41,5 +41,30 @@ public class Main {
         System.out.println(arrayList.get(0));
         System.out.println(arrayList.get(4));
         System.out.println(arrayList.get(15));
+        IntVector intVector = new IntVector();
+        intVector.add(1);
+        intVector.add(2);
+        intVector.add(3);
+        intVector.add(15);
+        intVector.add(16);
+        intVector.add(23);
+        intVector.add(15);
+        intVector.add(1);
+        intVector.add(1);
+        intVector.add(2);
+        intVector.add(44);
+        intVector.add(23);
+        intVector.add(66);
+        intVector.add(77);
+        intVector.add(56);
+        intVector.add(12);
+        intVector.add(35);
+        intVector.add(64);
+        intVector.add(74);
+        intVector.add(87);
+        intVector.add(80);
+        System.out.println(intVector.get(0));
+        System.out.println(intVector.get(4));
+        System.out.println(intVector.get(22));
     }
 }
