@@ -27,9 +27,8 @@ public class IntArrayList implements IntList {
 
     @Override
     public int get(int id) {
-        if (id < 0 || id >= arraySize) {
+        if (id < 0 || id >= this.arraySize) {
             throw new IllegalArgumentException("Id doesn't exist");
-
         }
         return this.intArray[id];
     }
