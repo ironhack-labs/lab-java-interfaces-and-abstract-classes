@@ -9,15 +9,10 @@ public class Truck extends Car {
         setTowingCapacity(towingCapacity);
     }
 
-
     @Override
     String getInfo() {
-        return "Car:" + "\n" +
-                "vinNumber='" + super.getVinNumber() + "\n" +
-                "make='" + super.getMake() + "\n" +
-                "model='" + super.getModel() + "\n" +
-                "mileage=" + super.getMileage() + "\n" +
-                "towingCapacity=" + getTowingCapacity()+ "\n";
+        return String.format("Car: %n vinNumber = %s%n make = %s%n model = %s%n mileage = %s%n towingCapacity = %s%n",
+                super.getVinNumber(), super.getMake(), super.getModel(), super.getMileage(), getTowingCapacity());
     }
 
     public double getTowingCapacity() {

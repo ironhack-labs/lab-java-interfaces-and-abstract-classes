@@ -1,8 +1,11 @@
 package inlist.interfaces;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.stream.IntStream;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
 class IntArrayListTest {
@@ -14,7 +17,7 @@ class IntArrayListTest {
         IntStream.range(0, 10).forEach(intArrayList::add);
 
         assertEquals(9, intArrayList.get(9));
-        assertEquals(0, intArrayList.get(10));
+        assertThrows(IndexOutOfBoundsException.class, () -> intArrayList.get(10));
     }
 
     @Test

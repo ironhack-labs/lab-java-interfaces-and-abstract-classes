@@ -8,6 +8,9 @@ public class IntVector implements InList {
 
     @Override
     public int get(int id) {
+        if (id < 0 || id >= lastPosition) {
+            throw new IndexOutOfBoundsException("Index: " + id + ", Size: " + lastPosition);
+        }
         return numbers[id];
     }
 

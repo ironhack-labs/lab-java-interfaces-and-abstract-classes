@@ -6,12 +6,11 @@ public class IntArrayList implements InList {
     private int lastPosition;
     private final int DEFAULT_ARRAY_SIZE = 10;
 
-    private void checkIndex(int id) throws IndexOutOfBoundsException {
-        if (id > numbers.length - 1) throw new IndexOutOfBoundsException();
-    }
-
     @Override
     public int get(int id) {
+        if (id < 0 || id >= lastPosition) {
+            throw new IndexOutOfBoundsException("Index: " + id + ", Size: " + lastPosition);
+        }
         return numbers[id];
     }
 

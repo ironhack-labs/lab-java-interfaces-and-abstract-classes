@@ -11,12 +11,8 @@ public class UtilityVehicle extends Car {
 
     @Override
     String getInfo() {
-        return "Car: " + "\n" +
-                "vinNumber='" + super.getVinNumber() + "\n" +
-                "make='" + super.getMake() + "\n" +
-                "model='" + super.getModel() + "\n" +
-                "mileage=" + super.getMileage() + "\n" +
-                "fourWheelDrive=" + isFourWheelDrive()+ "\n";
+        return String.format("Car: %n vinNumber = %s%n make = %s%n model = %s%n mileage = %s%n fourWheelDrive = %s%n",
+                super.getVinNumber(), super.getMake(), super.getModel(), super.getMileage(), isFourWheelDrive());
     }
 
     public boolean isFourWheelDrive() {
