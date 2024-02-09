@@ -25,6 +25,10 @@ public class IntVector implements IntList{
 
     @Override
     public int get(int id) {
-        return 0;
+        if(id>=size)
+            return 0;
+        else {
+            return numbers_list[id];
+        }
     }
 }

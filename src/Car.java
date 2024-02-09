@@ -3,12 +3,23 @@ abstract class Car {
     private String make;
     private int mileage;
 
+    private String model;
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
     public abstract String getInfo();
 
-    public Car(String vinNumber, String make, int mileage) {
+    public Car(String vinNumber, String make, int mileage, String model) {
         this.vinNumber = vinNumber;
         this.make = make;
         this.mileage = mileage;
+        this.model = model;
     }
 
     public String getVinNumber() {

@@ -9,11 +9,11 @@ public class UtilityVehicle extends Car{
 
     private boolean fourWheelDrive;
 
-    public UtilityVehicle(String vinNumber, String make, int mileage, boolean fourWheelDrive ) {
-        super(vinNumber, make, mileage);
+    public UtilityVehicle(String vinNumber, String make, int mileage, boolean fourWheelDrive, String model ) {
+        super(vinNumber, make, mileage, model);
         this.fourWheelDrive =fourWheelDrive;
     }
     public String getInfo(){
-        return "Truck - VIN: " + getVinNumber() + ", Make: " + getMake() + ", Model: " + ", Mileage: " + getMileage() +"Is FourWheelDrive?" + isFourWheelDrive();
+        return "Truck - VIN: " + getVinNumber() + ", Make: " + getMake() + ", Model: " + getModel()+ ", Mileage: " + getMileage() +"Is FourWheelDrive?" + isFourWheelDrive();
     }
 }
