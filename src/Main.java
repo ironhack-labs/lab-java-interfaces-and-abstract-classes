@@ -1,7 +1,9 @@
 package src;
 
 import src.cars.*;
+import src.integers.IntArrayList;
 import src.video.*;
+import src.integers.*;
 
 import java.math.BigDecimal;
 
@@ -23,5 +25,21 @@ public class Main {
         System.out.println(movie.getInfo());
         Video tvSeries = new TvSeries("Game of Thrones", 60, 80);
         System.out.println(tvSeries.getInfo());
+        System.out.println("====== IntList Interface ======");
+        IntArrayList arrayList = new IntArrayList();
+        arrayList.add(1);
+        arrayList.add(2);
+        arrayList.add(3);
+        arrayList.add(14);
+        arrayList.add(11);
+        arrayList.add(20);
+        arrayList.add(10);
+        arrayList.add(1);
+        arrayList.add(1);
+        arrayList.add(2);
+        arrayList.add(2222);
+        System.out.println(arrayList.get(0));
+        System.out.println(arrayList.get(4));
+        System.out.println(arrayList.get(15));
     }
 }

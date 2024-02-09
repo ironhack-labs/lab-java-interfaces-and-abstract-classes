@@ -9,6 +9,7 @@ public class IntArrayList implements IntList {
     private int arraySize = 0;
     private int maxArraySize = 10;
 
+    @Override
     public void add(int number) {
         if (this.arraySize == this.maxArraySize) {
             this.intArray = new int[this.maxArraySize + (this.maxArraySize / 2)];
@@ -26,6 +27,10 @@ public class IntArrayList implements IntList {
 
     @Override
     public int get(int id) {
-        return 0;
+        if (id < 0 || id >= arraySize) {
+            throw new IllegalArgumentException("Id doesn't exist");
+
+        }
+        return this.intArray[id];
     }
 }
