@@ -4,10 +4,10 @@ public class Movie extends Video {
 
     private double rating;
 
-    public Movie(String title, int duration) {
+    public Movie(String title, int duration, double rating) {
 
         super(title, duration);
-        setRating(rating);
+        this.rating=rating;
     }
 
     public double getRating() {
