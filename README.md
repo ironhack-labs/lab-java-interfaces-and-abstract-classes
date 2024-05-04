@@ -337,3 +337,4 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 </details>
 
+By implementing these classes, we can efficiently manage lists of integers with different resizing strategies based on the requirements of the application. The IntArrayList may be more efficient when memory constraints are a concern, while IntVector may be more efficient when fewer resizings are desired.
