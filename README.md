@@ -67,6 +67,9 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 3. `IntArrayList` should store numbers in an array with a length of 10 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is 50% larger, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 15.)
 4. `IntVector` should store numbers in an array with a length of 20 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is double the size of the current array, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 20.)
 5. In your `README.md`, include an example of when `IntArrayList` would be more efficient and when `IntVector` would be more efficient.
+6. Vector accepts multi thread ,what i gathered from the internet is that ArrayList
+7. is faster in performance, but it is not stable in multithreaded implications.
+8. But overall arraylist is more versatile .You can use a wrapper on arraylist to also function in synchronised way and be able to do multithreaded actions.
 
 <br>
 
