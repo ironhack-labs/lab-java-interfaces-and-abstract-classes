@@ -2,7 +2,7 @@
 
 # LAB Java | Interfaces and Abstract Classes
 
-## Introduction
+## Introduction 
 
 We have just learned how to create and implement interfaces as well as how to create and extend abstract classes so now let's practice a bit.
 
