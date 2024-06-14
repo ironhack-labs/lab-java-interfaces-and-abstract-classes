@@ -1,0 +1,1 @@
+IntArrayList would be better to be used with smaller elements since the array doesnt scale as fast as vector array list. 
