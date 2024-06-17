@@ -68,6 +68,10 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 4. `IntVector` should store numbers in an array with a length of 20 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is double the size of the current array, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 20.)
 5. In your `README.md`, include an example of when `IntArrayList` would be more efficient and when `IntVector` would be more efficient.
 
+IntArrayList would be more efficient when the number of elements being added is moderate and the growth rate of the array does not need to be very aggressive. For example, if you need to add a few hundred elements, IntArrayList can handle the growth more efficiently with less memory overhead.
+
+IntVector would be more efficient when you expect a large number of additions and need to minimize the number of times the array needs to be resized. For example, if you are adding thousands of elements, IntVector's doubling strategy reduces the number of resizing operations, which can be more efficient in terms of performance.
+
 <br>
 
 ## FAQs
