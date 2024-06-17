@@ -67,6 +67,21 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 3. `IntArrayList` should store numbers in an array with a length of 10 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is 50% larger, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 15.)
 4. `IntVector` should store numbers in an array with a length of 20 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is double the size of the current array, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 20.)
 5. In your `README.md`, include an example of when `IntArrayList` would be more efficient and when `IntVector` would be more efficient.
+  
+<br>
+
+<br>
+
+## The IntList Interface and its implementations
+
+This project demonstrates the implementation of an IntList interface with two different implementations: the 'IntArrayList' class and the 'IntVector' class.
+
+### The IntList Interface
+The 'IntArrayList' class would be more efficient when dealing with many elements and predictable growth patterns. For example, if you know that you will be adding a fixed number of elements to the list, IntArrayList would be a good choice because it only requires resizing the array once, rather than resizing it multiple times as in the case of IntVector.
+
+The 'IntVector class', on the other hand, would be more efficient when dealing with many elements and unpredictable growth patterns. For example, if you add elements to the list one at a time and the list size is not known in advance, IntVector would be a good choice because it will automatically resize the array as needed.
+
+In short, the 'IntArrayList' class works for predictable growth patterns and the 'IntVector' class suits unpredictable growth patterns.
 
 <br>
 
