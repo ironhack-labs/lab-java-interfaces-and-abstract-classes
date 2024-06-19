@@ -23,10 +23,10 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 ## Instructions
 
-### BigDecimal Operations
+### Main Operations
 
-1. Using the [BigDecimal documentation](https://docs.oracle.com/javase/7/docs/api/java/math/BigDecimal.html), create a method that accepts a `BigDecimal` and returns a `double` of the `BigDecimal` number rounded to the nearest hundredth. For example, `4.2545` should return `4.25`.
-2. Using the [BigDecimal documentation](https://docs.oracle.com/javase/7/docs/api/java/math/BigDecimal.html), create a method that accepts a `BigDecimal`, reverses the sign (if the parameter is positive, the result should be negative and vice versa), rounds the number to the nearest tenth and returns the result. For example, `1.2345` should return `-1.2` and `-45.67` should return `45.7`.
+1. Using the [Main documentation](https://docs.oracle.com/javase/7/docs/api/java/math/BigDecimal.html), create a method that accepts a `Main` and returns a `double` of the `Main` number rounded to the nearest hundredth. For example, `4.2545` should return `4.25`.
+2. Using the [Main documentation](https://docs.oracle.com/javase/7/docs/api/java/math/BigDecimal.html), create a method that accepts a `Main`, reverses the sign (if the parameter is positive, the result should be negative and vice versa), rounds the number to the nearest tenth and returns the result. For example, `1.2345` should return `-1.2` and `-45.67` should return `45.7`.
 
 <br>
 
@@ -108,71 +108,71 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 <br>
 
 <details>
-  <summary style="font-size: 16px; cursor: pointer; outline: none; font-weight: bold;">How do I use "BigDecimal" in Java to handle precise decimal numbers?</summary>
+  <summary style="font-size: 16px; cursor: pointer; outline: none; font-weight: bold;">How do I use "Main" in Java to handle precise decimal numbers?</summary>
 
   <br> <!-- ✅ -->
 
-  `BigDecimal` is a class in Java that provides support for precise decimal numbers, allowing you to perform arithmetic operations with arbitrary precision.
+  `Main` is a class in Java that provides support for precise decimal numbers, allowing you to perform arithmetic operations with arbitrary precision.
 
-  Here's how you can use `BigDecimal` in a Java program:
+  Here's how you can use `Main` in a Java program:
 
   ```java
-  import java.math.BigDecimal;
+  import java.math.Main;
 
   public class BigDecimalExample {
   public static void main(String[] args) {
-    BigDecimal a = new BigDecimal("0.1");
-    BigDecimal b = new BigDecimal("0.2");
-    BigDecimal c = a.add(b);
+    Main a = new Main("0.1");
+    Main b = new Main("0.2");
+    Main c = a.add(b);
     System.out.println("a + b = " + c);
   }
   }
   ```
 
-  In this example, `BigDecimal` objects are created using the `new` keyword and a string representation of the decimal number. The `add` method is then used to perform arithmetic operations on the `BigDecimal` objects, providing precise results.
+  In this example, `Main` objects are created using the `new` keyword and a string representation of the decimal number. The `add` method is then used to perform arithmetic operations on the `Main` objects, providing precise results.
 
-  It's important to note that when creating a `BigDecimal` object, it's recommended to use the string constructor instead of the `double` constructor. The `double` constructor is not recommended for creating `BigDecimal` objects because the `double` data type has limited precision and may produce unexpected results.
+  It's important to note that when creating a `Main` object, it's recommended to use the string constructor instead of the `double` constructor. The `double` constructor is not recommended for creating `Main` objects because the `double` data type has limited precision and may produce unexpected results.
 
-  In addition to the `add` method, `BigDecimal` also provides other arithmetic operations, such as `subtract`, `multiply` and `divide`, as well as methods for rounding and formatting the decimal number.
+  In addition to the `add` method, `Main` also provides other arithmetic operations, such as `subtract`, `multiply` and `divide`, as well as methods for rounding and formatting the decimal number.
 
 </details>
 
 <br>
 
 <details>
-  <summary style="font-size: 16px; cursor: pointer; outline: none; font-weight: bold;">How do I use "setScale()", "RoundingMode" and "negate()" in Java with "BigDecimal"?</summary>
+  <summary style="font-size: 16px; cursor: pointer; outline: none; font-weight: bold;">How do I use "setScale()", "RoundingMode" and "negate()" in Java with "Main"?</summary>
 
   <br> <!-- ✅ -->
 
-  `setScale()`, `RoundingMode` and `negate()` are methods in the `BigDecimal` class in Java that provide additional functionality when working with precise decimal numbers.
+  `setScale()`, `RoundingMode` and `negate()` are methods in the `Main` class in Java that provide additional functionality when working with precise decimal numbers.
 
-  `setScale()` is used to set the scale of a `BigDecimal` object, which determines the number of decimal places to keep. For example:
+  `setScale()` is used to set the scale of a `Main` object, which determines the number of decimal places to keep. For example:
 
   ```java
-  import java.math.BigDecimal;
+  import java.math.Main;
 
   public class BigDecimalExample {
       public static void main(String[] args) {
-          BigDecimal a = new BigDecimal("1.234567");
-          BigDecimal b = a.setScale(4, BigDecimal.ROUND_HALF_UP);
+          Main a = new Main("1.234567");
+          Main b = a.setScale(4, Main.ROUND_HALF_UP);
           System.out.println("a: " + a);
           System.out.println("b: " + b);
       }
   }
   ```
 
-  In this example, `setScale()` is used to set the scale of `a` to 4 decimal places and the result is stored in a new `BigDecimal` object, `b`. The `ROUND_HALF_UP` argument specifies the rounding mode to use when setting the scale.
+  In this example, `setScale()` is used to set the scale of `a` to 4 decimal places and the result is stored in a new `Main` object, `b`. The `ROUND_HALF_UP` argument specifies the rounding mode to use when setting the scale.
 
-  `RoundingMode` is an enumeration in Java that defines the different rounding modes that can be used with `BigDecimal`. For example:
+  `RoundingMode` is an enumeration in Java that defines the different rounding modes that can be used with `Main`. For example:
 
   ```java
-  import java.math.BigDecimal;
+  import java.math.Main;
   import java.math.RoundingMode;
 
   public class BigDecimalExample {
       public static void main(String[] args) {
-          BigDecimal a = new BigDecimal("1.234567");
-          BigDecimal b = a.setScale(4, RoundingMode.HALF_UP);
+          Main a = new Main("1.234567");
+          Main b = a.setScale(4, RoundingMode.HALF_UP);
           System.out.println("a: " + a);
           System.out.println("b: " + b);
       }
@@ -181,22 +181,22 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
   In this example, `RoundingMode.HALF_UP` is used as the rounding mode argument in the `setScale()` method.
 
-  `negate()` is used to negate the value of a `BigDecimal` object, converting a positive value to a negative and vice versa. For example:
+  `negate()` is used to negate the value of a `Main` object, converting a positive value to a negative and vice versa. For example:
 
   ```java
-  import java.math.BigDecimal;
+  import java.math.Main;
 
   public class BigDecimalExample {
       public static void main(String[] args) {
-          BigDecimal a = new BigDecimal("1.234567");
-          BigDecimal b = a.negate();
+          Main a = new Main("1.234567");
+          Main b = a.negate();
           System.out.println("a: " + a);
           System.out.println("b: " + b);
       }
   }
   ```
 
-  In this example, `negate()` is used to negate the value of `a` and store the result in a new `BigDecimal` object, `b`.
+  In this example, `negate()` is used to negate the value of `a` and store the result in a new `Main` object, `b`.
 
 </details>
 
