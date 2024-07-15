@@ -287,19 +287,13 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
   The `System.arraycopy()` method in Java is used to copy elements from one array to another. It is part of the `System` class and provides a faster alternative to the traditional for loop method of copying arrays. The method has the following signature:
 
-  ```java
-  public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length)
+  ```javapublic static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length;
   ```
 
   Here's an example of how you can use `System.arraycopy()`:
 
-  ```java
-  int[] sourceArray = new int[] {1, 2, 3, 4, 5};
-  int[] destinationArray = new int[5];
-  System.arraycopy(sourceArray, 0, destinationArray, 0, sourceArray.length);
+  
 
-  System.out.println(Arrays.toString(destinationArray));
-  ```
 
   In this example, `System.arraycopy()` is used to copy the elements of `sourceArray` to `destinationArray`. The first argument `src` is the source array, the second argument `srcPos` is the starting position in the source array, the third argument `dest` is the destination array, the fourth argument `destPos` is the starting position in the destination array and the fifth argument `length` is the number of elements to be copied. The output of this example would be `[1, 2, 3, 4, 5]`.
 
@@ -336,4 +330,17 @@ Once you finish the assignment, submit a URL link to your repository or your pul
   ```
 
 </details>
+
+# IntArrayList vs IntVector Efficiency
+
+## IntArrayList Efficiency
+IntArrayList is more efficient when:
+- The list is expected to grow gradually and not too large.
+- Memory usage is a concern and incremental growth is preferred.
+
+## IntVector Efficiency
+IntVector is more efficient when:
+- The list is expected to grow significantly and rapidly.
+- Reducing the number of resizing operations is a priority, even at the cost of higher initial memory usage.
+
 
