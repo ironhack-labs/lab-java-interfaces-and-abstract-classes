@@ -1,3 +1,20 @@
+# IntArrayList vs IntVector
+
+## IntArrayList
+
+- **Pros**: More efficient for small datasets where the growth pattern is slower. It reduces the number of resizes due to smaller increments.
+- **Cons**: Can be inefficient when handling very large datasets as it increases the array size by 50% at a time.
+
+**Use Case Example**: Use `IntArrayList` when you expect the list to grow slowly and are dealing with a moderate amount of data.
+
+## IntVector
+
+- **Pros**: More efficient for large datasets with frequent additions due to doubling the size of the array, reducing the number of resizes.
+- **Cons**: Uses more memory initially due to the larger default size.
+
+**Use Case Example**: Use `IntVector` when you expect the list to grow rapidly or handle a large amount of data, minimizing the number of resizes.
+
+
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
 # LAB Java | Interfaces and Abstract Classes
