@@ -70,7 +70,11 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 <br>
 
-## FAQs
+## IntArrayList vs IntVector
+
+IntVector would be much more efficient in any scenario in wich we can expect many and frequent number of insertions to the data array, because we will need a bigger total amount of memory, and in that case its more efficient to pre-allocate bigger chunks of memory, instead of a lot of small allocations. On the other hand, IntArrayList would be more efficient when we expect few and not frequent number of insertions to the data array, because we will need less total memory and we can assume small memory allocations.
+
+
 
 <br>
 
