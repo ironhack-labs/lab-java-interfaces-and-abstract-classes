@@ -30,16 +30,16 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 <br>
 
-### Car Inventory System
+### com.ironhack.cars.Car Inventory System
 
 1. Suppose you are building a car inventory system. All cars have a `vinNumber`, `make`, `model` and `mileage`. But no car is just a car. Each car is either a `Sedan`, a `UtilityVehicle` or a `Truck`.
-2. Create an abstract class named `Car` and define the following properties and behaviors:
+2. Create an abstract class named `com.ironhack.cars.Car` and define the following properties and behaviors:
    - `vinNumber`: a `String` representing the VIN number of the car
    - `make`: a `String` representing the make of the car
    - `model`: a `String` representing the model of the car
    - `mileage`: an `int` representing the mileage of the car
    - `getInfo()`: a method that returns a `String` containing all of the car's properties in a readable format
-3. Create three classes that extend `Car`: `Sedan`, `UtilityVehicle` and `Truck`.
+3. Create three classes that extend `com.ironhack.cars.Car`: `Sedan`, `UtilityVehicle` and `Truck`.
 4. `UtilityVehicle` objects should have an additional `fourWheelDrive` property, a `boolean` that represents whether the vehicle has four-wheel drive.
 5. `Truck` objects should have an additional `towingCapacity` property, a `double` that represents the towing capacity of the truck.
 
@@ -333,7 +333,20 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
   ```bash
   git push origin <branch_name>
-  ```
+  
+  ---
 
+### When to Use IntArrayList vs. IntVector
+
+- **IntArrayList** increases its size by 50% when full.  
+  More efficient when you're adding a small or moderately growing number of elements.  
+  It uses less memory for small expansions and grows more gradually.
+
+- **IntVector** doubles its size when full.  
+  More efficient when you're expecting to add a large number of elements quickly.  
+  It reduces the number of resizes needed when working with big data sets.
+
+  ```
+Submission completed on branch feature/solution.
 </details>
 
