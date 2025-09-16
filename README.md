@@ -67,6 +67,8 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 3. `IntArrayList` should store numbers in an array with a length of 10 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is 50% larger, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 15.)
 4. `IntVector` should store numbers in an array with a length of 20 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is double the size of the current array, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 20.)
 5. In your `README.md`, include an example of when `IntArrayList` would be more efficient and when `IntVector` would be more efficient.
+----- IntArrayList is more efficient when we don't need to add a huge quantity a new data to the list, or when we don't need to add data often. Using this, allows us to occupy less (potentially empty) space in memory.
+----- VectorList, on the other hand, is useful when we know we are going to add a lot of new data to the list. This allows us to add the data, without having to increase the memory many times. This means the program can just directly add, without having to double up the memory, using less power.
 
 <br>
 
