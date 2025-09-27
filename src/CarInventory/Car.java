@@ -1,0 +1,58 @@
+package CarInventory;
+
+abstract class Car {
+    protected String vinNumber;
+    protected String make;
+    protected String model;
+    protected int mileage;
+
+
+    public Car(String vinNumber, String make, String model, int mileage){
+        this.vinNumber = vinNumber;
+        this.make = make;
+        this.model = model;
+        this.mileage = mileage;
+    }
+
+    public abstract String getInfo();
+}
+
+class Sedan extends Car {
+    public Sedan(String vinNumber, String make, String model, int mileage) {
+        super(vinNumber, make, model, mileage);
+    }
+
+    @Override
+    public String getInfo() {
+        return " Sedan - VIN: " + vinNumber + ", Make: " + make + ", Model: " + model + ", Mileage: " + mileage;
+    }
+}
+
+class UtilityVehicle extends Car {
+    private boolean fourWheelDrive;
+
+    public UtilityVehicle(String vinNumber, String make, String model, int mileage) {
+        super(vinNumber, make, model, mileage);
+        this.fourWheelDrive =fourWheelDrive;
+    }
+
+    @Override
+    public String getInfo() {
+        return " Utility Vehicle - VIN: " + vinNumber + ", Make: " + make + ", Model: " + model + ", Mileage: " + mileage + ", Four Wheel Drive: " + (fourWheelDrive ? "Yes"  : "No");
+    }
+}
+
+class Truck extends Car {
+    private double towingCapacity;
+
+    public Truck(String vinNumber, String make, String model, int mileage, double towingCapacity) {
+        super(vinNumber, make, model, mileage);
+        this.towingCapacity = towingCapacity;
+    }
+
+    @Override
+    public String getInfo() {
+        return (" Truck - VIN: " + vinNumber + ", Make: " +  make + ", Model: " + model + ", Mileage: " + mileage + ", Towing Capacity: " + towingCapacity + " tons ");
+    }
+}
+
