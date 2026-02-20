@@ -69,6 +69,22 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 5. In your `README.md`, include an example of when `IntArrayList` would be more efficient and when `IntVector` would be more efficient.
 
 <br>
+Efficiency Comparison
+
+**IntArrayList** is more efficient when memory usage is a concern. Since it only grows by 50%, it avoids allocating large blocks of unused memory.
+
+**IntVector** is more efficient when adding a large number of elements quickly. Because it doubles its size, the frequency of resizing and copying the array is reduced, 
+making it faster.
+
+
+
+
+
+
+
+
+
+
 
 ## FAQs
 
