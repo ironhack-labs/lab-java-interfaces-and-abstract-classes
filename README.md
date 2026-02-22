@@ -38,7 +38,7 @@ Once you finish the assignment, submit a URL link to your repository or your pul
    - `make`: a `String` representing the make of the car
    - `model`: a `String` representing the model of the car
    - `mileage`: an `int` representing the mileage of the car
-   - `getInfo()`: a method that returns a `String` containing all of the car's properties in a readable format
+   - `getInfo()`: a method that returns a `String` containingeg all of the car's properties in a readable format
 3. Create three classes that extend `Car`: `Sedan`, `UtilityVehicle` and `Truck`.
 4. `UtilityVehicle` objects should have an additional `fourWheelDrive` property, a `boolean` that represents whether the vehicle has four-wheel drive.
 5. `Truck` objects should have an additional `towingCapacity` property, a `double` that represents the towing capacity of the truck.
@@ -68,6 +68,7 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 4. `IntVector` should store numbers in an array with a length of 20 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is double the size of the current array, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 20.)
 5. In your `README.md`, include an example of when `IntArrayList` would be more efficient and when `IntVector` would be more efficient.
 
+
 <br>
 
 ## FAQs
@@ -77,7 +78,7 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 <details>
   <summary style="font-size: 16px; cursor: pointer; outline: none; font-weight: bold;">I am stuck and don't know how to solve the problem or where to start. What should I do?</summary>
 
-  <br> <!-- ✅ -->
+  <br> <!-- ✅ -->![]()
 
   If you are stuck in your code and don't know how to solve the problem or where to start, you should take a step back and try to form a clear, straightforward question about the specific issue you are facing. The process you will go through while trying to define this question will help you narrow down the problem and come up with potential solutions.
 
@@ -336,4 +337,3 @@ Once you finish the assignment, submit a URL link to your repository or your pul
   ```
 
 </details>
-
