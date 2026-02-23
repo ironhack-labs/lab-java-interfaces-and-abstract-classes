@@ -1,0 +1,13 @@
+package org.example;
+
+public class VectorList implements IntList{
+    @Override
+    public void add(int number) {
+
+    }
+
+    @Override
+    public int get(int id) {
+        return 0;
+    }
+}
