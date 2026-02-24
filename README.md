@@ -336,4 +336,11 @@ Once you finish the assignment, submit a URL link to your repository or your pul
   ```
 
 </details>
+### My Comparison: IntArrayList vs IntVector
+
+From my implementation, here is how I see the efficiency:
+
+- **IntArrayList** is better when we want to **save memory**. Because it only grows by 50%, it doesn't take too much unnecessary space in the RAM. It is perfect for lists that don't grow very fast.
+
+- **IntVector** is better when we need to **add a lot of data quickly**. Since it doubles its size (100% growth) every time it's full, it doesn't need to resize and copy elements as often as the ArrayList. This makes it faster for very large data entries, even if it uses more memory.
 
