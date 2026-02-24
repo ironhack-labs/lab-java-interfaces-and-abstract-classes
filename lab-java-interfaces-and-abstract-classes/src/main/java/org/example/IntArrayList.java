@@ -4,24 +4,36 @@ import java.sql.Array;
 import java.util.ArrayList;
 
 public class IntArrayList implements IntList{
-    int[] numbers = new int[10];
-    int size = 0;
+    private int[] data;
+    private int size;
+
+    public IntArrayList() {
+        data = new int[10];
+        size = 0;
+    }
 
     @Override
     public void add(int number) {
-        if (size < numbers.length){
-            numbers[size] = number;
-            size++;
-        } else {
-            int newSize = size + (size/2);
-            int[] newNumbers = new int[newSize];
-            newNumbers[newSize] = number;
-            newSize++;
+        if (size == data.length) {
+            int newCapacity = data.length + data.length / 2;
+            int[] newData = new int[newCapacity];
+
+            for (int i = 0; i < data.length; i++) {
+                newData[i] = data[i];
+            }
+
+            data = newData;
         }
+
+        data[size] = number;
+        size++;
     }
 
     @Override
     public int get(int id) {
-        return 0;
+        if (id < 0 || id >= size) {
+            throw new IndexOutOfBoundsException("Invalid index");
+        }
+        return data[id];
     }
 }
