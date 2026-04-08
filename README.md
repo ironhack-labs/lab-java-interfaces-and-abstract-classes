@@ -30,18 +30,18 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 <br>
 
-### Car Inventory System
+### CarInventorySystem.Car Inventory System
 
-1. Suppose you are building a car inventory system. All cars have a `vinNumber`, `make`, `model` and `mileage`. But no car is just a car. Each car is either a `Sedan`, a `UtilityVehicle` or a `Truck`.
-2. Create an abstract class named `Car` and define the following properties and behaviors:
+1. Suppose you are building a car inventory system. All cars have a `vinNumber`, `make`, `model` and `mileage`. But no car is just a car. Each car is either a `CarInventorySystem.Sedan`, a `CarInventorySystem.UtilityVehicle` or a `CarInventorySystem.Truck`.
+2. Create an abstract class named `CarInventorySystem.Car` and define the following properties and behaviors:
    - `vinNumber`: a `String` representing the VIN number of the car
    - `make`: a `String` representing the make of the car
    - `model`: a `String` representing the model of the car
    - `mileage`: an `int` representing the mileage of the car
    - `getInfo()`: a method that returns a `String` containing all of the car's properties in a readable format
-3. Create three classes that extend `Car`: `Sedan`, `UtilityVehicle` and `Truck`.
-4. `UtilityVehicle` objects should have an additional `fourWheelDrive` property, a `boolean` that represents whether the vehicle has four-wheel drive.
-5. `Truck` objects should have an additional `towingCapacity` property, a `double` that represents the towing capacity of the truck.
+3. Create three classes that extend `CarInventorySystem.Car`: `CarInventorySystem.Sedan`, `CarInventorySystem.UtilityVehicle` and `CarInventorySystem.Truck`.
+4. `CarInventorySystem.UtilityVehicle` objects should have an additional `fourWheelDrive` property, a `boolean` that represents whether the vehicle has four-wheel drive.
+5. `CarInventorySystem.Truck` objects should have an additional `towingCapacity` property, a `double` that represents the towing capacity of the truck.
 
 <br>
 
