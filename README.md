@@ -68,6 +68,22 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 4. `IntVector` should store numbers in an array with a length of 20 by default. When the `add` method is called, you must first determine if the array is full. If it is, create a new array that is double the size of the current array, move all elements over to the new array and add the new element. (For example, an array of length 10 would be increased to 20.)
 5. In your `README.md`, include an example of when `IntArrayList` would be more efficient and when `IntVector` would be more efficient.
 
+# Choosing Between IntArrayList and IntVector
+
+This project has two different ways to handle an array that runs out of space. Here is a simple guide on when to use each one:
+
+### IntArrayList (Grows by 50%)
+* **Best for:** Saving memory (RAM).
+* **Why:** When the array gets full, it only adds half of its current capacity. This is great because it prevents having a lot of empty, unused spaces in memory. You should use this when your list grows slowly or if your computer doesn't have a lot of memory available.
+
+### IntVector (Doubles its size)
+* **Best for:** Speed and performance.
+* **Why:** Every time an array gets full, Java has to create a brand new one and copy all the old numbers into it. This process takes time! Because `IntVector` doubles its size, it doesn't have to do this heavy task as often. You should use this when you need to add thousands of numbers very fast, even if it means wasting some empty memory spaces at the end.
+
+
+
+
+
 <br>
 
 ## FAQs
