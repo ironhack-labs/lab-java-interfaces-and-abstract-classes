@@ -70,10 +70,10 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 ## IntArrayList vs IntVector Efficiency
 
-- IntArrayList 
+- IntArrayList: 
 - Esta opcion es más eficiente cuando es importante el uso de la memoria y no se espera un crecimiento muy frecuente de la lista
 
-- IntVector
+- IntVector:
 - Por otro lado, esta opcion es más práctica cuando se piensa añadir elementos con frecuencia
 
 <br>
