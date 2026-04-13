@@ -25,8 +25,8 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 ### BigDecimal Operations
 
-1. Using the [BigDecimal documentation](https://docs.oracle.com/javase/7/docs/api/java/math/BigDecimal.html), create a method that accepts a `BigDecimal` and returns a `double` of the `BigDecimal` number rounded to the nearest hundredth. For example, `4.2545` should return `4.25`.
-2. Using the [BigDecimal documentation](https://docs.oracle.com/javase/7/docs/api/java/math/BigDecimal.html), create a method that accepts a `BigDecimal`, reverses the sign (if the parameter is positive, the result should be negative and vice versa), rounds the number to the nearest tenth and returns the result. For example, `1.2345` should return `-1.2` and `-45.67` should return `45.7`.
+1. Using the [BigDecimal documentation](https://docs.oracle.com/javase/7/docs/api/java/com.ironhack.math/BigDecimal.html), create a method that accepts a `BigDecimal` and returns a `double` of the `BigDecimal` number rounded to the nearest hundredth. For example, `4.2545` should return `4.25`.
+2. Using the [BigDecimal documentation](https://docs.oracle.com/javase/7/docs/api/java/com.ironhack.math/BigDecimal.html), create a method that accepts a `BigDecimal`, reverses the sign (if the parameter is positive, the result should be negative and vice versa), rounds the number to the nearest tenth and returns the result. For example, `1.2345` should return `-1.2` and `-45.67` should return `45.7`.
 
 <br>
 
@@ -117,7 +117,7 @@ Once you finish the assignment, submit a URL link to your repository or your pul
   Here's how you can use `BigDecimal` in a Java program:
 
   ```java
-  import java.math.BigDecimal;
+  import java.com.ironhack.math.BigDecimal;
 
   public class BigDecimalExample {
   public static void main(String[] args) {
@@ -149,7 +149,7 @@ Once you finish the assignment, submit a URL link to your repository or your pul
   `setScale()` is used to set the scale of a `BigDecimal` object, which determines the number of decimal places to keep. For example:
 
   ```java
-  import java.math.BigDecimal;
+  import java.com.ironhack.math.BigDecimal;
 
   public class BigDecimalExample {
       public static void main(String[] args) {
@@ -166,8 +166,8 @@ Once you finish the assignment, submit a URL link to your repository or your pul
   `RoundingMode` is an enumeration in Java that defines the different rounding modes that can be used with `BigDecimal`. For example:
 
   ```java
-  import java.math.BigDecimal;
-  import java.math.RoundingMode;
+  import java.com.ironhack.math.BigDecimal;
+  import java.com.ironhack.math.RoundingMode;
 
   public class BigDecimalExample {
       public static void main(String[] args) {
@@ -184,7 +184,7 @@ Once you finish the assignment, submit a URL link to your repository or your pul
   `negate()` is used to negate the value of a `BigDecimal` object, converting a positive value to a negative and vice versa. For example:
 
   ```java
-  import java.math.BigDecimal;
+  import java.com.ironhack.math.BigDecimal;
 
   public class BigDecimalExample {
       public static void main(String[] args) {
@@ -337,3 +337,7 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 </details>
 
+Criterio	IntArrayList (50%)	IntVector (100%)
+Uso de Memoria	Más eficiente (ahorra espacio)	Menos eficiente (desperdicia espacio)
+Velocidad	Más lenta en inserciones constantes	Más rápida en inserciones constantes
+Casos de uso	Apps móviles o dispositivos embebidos	Procesamiento de grandes volúmenes de datos
