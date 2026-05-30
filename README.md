@@ -337,3 +337,8 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
 </details>
 
+## IntArrayList vs IntVector
+
+IntArrayList can be more efficient when I do not need the list to grow very fast. It starts with 10 spaces and only grows by 50%, so it can avoid wasting too much unused space.
+
+IntVector can be more efficient when I need to add many numbers quickly. It starts with 20 spaces and doubles its size when it is full, so it resizes less often than IntArrayList.
